@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.discount-option {
+    margin-bottom: 20px;
+}
+
+.discount-option:last-child {
+    margin-bottom: 10px;
+}
+
+.option-content {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    position: relative;
+}
+
+.option-content h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.option-content p {
+    margin-bottom: 10px;
+}
+
+.option-content p span {
+    color: #333;
+    font-weight: bold;
+}
+
+.items {
+    margin-bottom: 10px;
+}
+
+.save {
+    background-color: #e5f7ff;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.most-popular .option-content {
+    border-color: #0077b6;
+}
+
+button {
+    width: 100%;
+    background-color: #0077b6;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #005b8c;
+}

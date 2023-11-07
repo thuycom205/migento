@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Loyalty Program Form</title>
+    <style>
+        .polaris-inspired {
+            font-family: 'Arial', sans-serif;
+            color: #212B36;
+        }
+        .polaris-inspired h2 {
+            color: #3A3D42;
+        }
+    </style>
+</head>
+<body class="polaris-inspired">
+
+<div class="container mt-5">
+    <h2>Loyalty Program Setup</h2>
+    <form>
+        <!-- Program Settings -->
+        <div class="form-group">
+            <label for="programName">Program Name</label>
+            <input type="text" class="form-control" id="programName" placeholder="Enter Program Name">
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="startDate">Start Date</label>
+                <input type="date" class="form-control" id="startDate">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="endDate">End Date</label>
+                <input type="date" class="form-control" id="endDate">
+            </div>
+        </div>
+
+        <!-- Earning Points -->
+        <div class="form-group">
+            <label for="pointsPerPurchase">Points per purchase</label>
+            <input type="number" class="form-control" id="pointsPerPurchase" placeholder="E.g., 10 points per $1">
+        </div>
+
+        <!-- Redemption Rate -->
+        <div class="form-group">
+            <label for="redemptionRate">Redemption Rate</label>
+            <input type="text" class="form-control" id="redemptionRate" placeholder="E.g., 100 points = $1">
+        </div>
+
+        <!-- Tier System -->
+        <div class="form-group">
+            <label for="tierName">Tier Name</label>
+            <input type="text" class="form-control" id="tierName" placeholder="E.g., Silver, Gold">
+        </div>
+
+        <!-- Notifications & Communications -->
+        <div class="form-group">
+            <label for="welcomeEmail">Welcome Email</label>
+            <textarea class="form-control" id="welcomeEmail" rows="3" placeholder="Customize your welcome email template here."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+<!-- Including Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

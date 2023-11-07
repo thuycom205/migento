@@ -1,0 +1,20 @@
+{
+    "name": "xseed/module-google-map",
+    "description": "Xseed Google Map",
+    "require": {
+        "php": ">=7.3.0"
+    },
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+        "proprietary"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Xseed\\GoogleMap\\": ""
+        }
+    }
+}

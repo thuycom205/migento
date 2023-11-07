@@ -1,0 +1,8 @@
+<page>
+    <update handle="styles"/>
+    <body>
+        <referenceContainer name="content">
+            <uiComponent name="xsizechart_listing"/>
+        </referenceContainer>
+    </body>
+</page>

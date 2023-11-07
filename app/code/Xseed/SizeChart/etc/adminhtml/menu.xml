@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <update
+            id="Xseed_Extensions::xseedextensions"
+            title="Xseed Extensions"
+            module="Magento_Backend" sortOrder="300"
+            resource="Xseed_Extensions::xseedextensions"/>
+
+        <add
+            id="Xseed_SizeChart::main_menu"
+            title="Size Chart"
+            module="Xseed_SizeChart" sortOrder="10"
+            parent="Xseed_Extensions::xseedextensions"
+            resource="Xseed_SizeChart::main_menu"/>
+
+        <add
+            id="Xseed_SizeChart::sizechart"
+            title="Manage Size Charts"
+            module="Xseed_SizeChart" sortOrder="20"
+            parent="Xseed_SizeChart::main_menu"
+            action="xsizechart/sizechart/index"
+            resource="Xseed_SizeChart::sizechart"/>
+
+        <add
+            id="Xseed_SizeChart::configuration"
+            title="Configurations"
+            module="Xseed_SizeChart" sortOrder="30"
+            parent="Xseed_SizeChart::main_menu"
+            action="adminhtml/system_config/edit/section/xsizechart"
+            resource="Xseed_SizeChart::configuration"/>
+    </menu>
+</config>

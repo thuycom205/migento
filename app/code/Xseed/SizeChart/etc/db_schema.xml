@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="xseed_sizechart" resource="default" engine="innodb" comment="SizeChart Rules">
+        <column xsi:type="smallint" name="chart_id" padding="5" unsigned="true" nullable="false" identity="true" comment="Chart Id"/>
+        <column xsi:type="text" name="title" nullable="false" length="255" comment="Title"/>
+        <column xsi:type="text" name="sizechart" nullable="false" length="64k" comment="Content of the Size Chart"/>
+        <column xsi:type="text" name="img" nullable="false" length="255" comment="Path to the Size Chart Image"/>
+        <column xsi:type="text" name="csv_filename" nullable="true" length="255" comment="Size Chart Data File"/>
+        <column xsi:type="text" name="category_id" nullable="true" length="255" comment="Category Id"/>
+        <column xsi:type="date" name="start_date" nullable="true" comment="Start Date"/>
+        <column xsi:type="date" name="end_date" nullable="true" comment="End Date"/>
+        <column xsi:type="smallint" name="status" nullable="false" default="0" comment="Status"/>
+        <column xsi:type="text" name="conditions_serialized" nullable="true" length="2M" comment="Conditions Serialized"/>
+        <column xsi:type="int" name="priority" unsigned="true" nullable="false" default="0" comment="Priority"/>
+
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="chart_id"/>
+        </constraint>
+        <index referenceId="XSEED_SIZECHART_PRIORITY_STATUS" indexType="btree">
+            <column name="priority"/>
+            <column name="status"/>
+        </index>
+    </table>
+</schema>

@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="xseed_livesalespopup_section" translate="label" type="text" sortOrder="200" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Xseed Google mapx</label>
+            <tab>general</tab>
+            <resource>Xseed_LiveSalesPopup::config</resource>
+            <group id="livesales_group" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Xseed Google map</label>
+                <field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Enable the Module</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="api_key" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Google API Key</label>
+                    <comment>Enter a custom value here.</comment>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                </field>
+                <field id="width" translate="label comment tooltip" type="text" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Width</label>
+                    <validate>validate-css-length</validate>
+                    <comment>The width of the map block (CSS length).</comment>
+                    <tooltip>You can use the CSS-length values for the block configuration (100px, 77pt, 20em, .5ex or 50%)</tooltip>
+                </field>
+                <field id="height" translate="label comment" type="text" sortOrder="70" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Height</label>
+                    <validate>validate-css-length</validate>
+                    <comment>The height of the map block (CSS length).</comment>
+                    <tooltip>You can use the CSS-length values for the block configuration (100px, 77pt, 20em, .5ex or 50%)</tooltip>
+                </field>
+
+                <field id="latitude" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Latitude</label>
+                    <validate>required-entry validate-number validate-number-range number-range--85-85</validate>
+                    <frontend_class>required amasty-autofill-latitude</frontend_class>
+                </field>
+                <field id="longitude" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Longitude</label>
+                    <validate>required-entry validate-number validate-number-range number-range--180-180</validate>
+                    <frontend_class>required amasty-autofill-longitude</frontend_class>
+                </field>
+                <field id="enabled" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Extension</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="custom_text" translate="label comment" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Email Subject</label>
+                    <comment>Enter a custom value here.</comment>
+
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                </field>
+                <field id="custom_text2" translate="label comment" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Email Body</label>
+                    <comment>Enter a custom value here.</comment>
+
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

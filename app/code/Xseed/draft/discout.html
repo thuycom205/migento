@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volume Discounts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 50px;
+        }
+
+        .container {
+            width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .discount {
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+
+        .discount label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .discount-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 1.5em;
+        }
+
+        .price .old-price {
+            text-decoration: line-through;
+            color: #999;
+            margin-right: 10px;
+        }
+
+        .product-option {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            align-items: center;
+        }
+
+        .product-option select {
+            width: 60%;
+        }
+
+        .savings {
+            text-align: center;
+            background-color: #e6f7ff;
+            padding: 10px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: block;
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .most-popular {
+            display: inline-block;
+            background-color: #ffd700;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Vitals - Volume Discounts App</h2>
+            <h1>Buy more, save more!</h1>
+        </div>
+
+        <div class="discount">
+            <label>
+                <input type="radio" name="discount"> Buy 2 with 10% off
+            </label>
+            <div class="discount-header">
+                <div>
+                    <p>Per item:</p>
+                    <p>Total Price:</p>
+                </div>
+                <div class="price">
+                    <span class="old-price">566.000đ</span>
+                    <span>510.000đ</span><br>
+                    <span>1.019.000đ</span>
+                </div>
+            </div>
+            <div class="product-option">
+                <span>#1</span>
+                <select>
+                    <option>Charcoal-Black Triblend / S (Pre-Order Now)</option>
+                </select>
+            </div>
+            <div class="product-option">
+                <span>#2</span>
+                <select>
+                    <option>Charcoal-Black Triblend / S (Pre-Order Now)</option>
+                </select>
+            </div>
+            <div class="savings">Save: 114.000đ</div>
+        </div>
+
+        <div class="discount">
+            <span class="most-popular">MOST POPULAR</span>
+            <label>
+                <input type="radio" name="discount"> Buy 4 with 15% off
+            </label>
+            <div class="discount-header">
+                <div>
+                    <p>Per item:</p>
+                    <p>Total Price:</p>
+                </div>
+                <div class="price">
+                    <span class="old-price">566.000đ</span>
+                    <span>482.000đ</span><br>
+                    <span>1.925.000đ</span>
+                </div>
+            </div>
+            <div class="savings">Save: 340.000đ</div>
+        </div>
+
+        <a href="#" class="btn">Add to cart</a>
+    </div>
+</body>
+</html>

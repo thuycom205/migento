@@ -1,0 +1,16 @@
+<?php
+/** @var Xseed\SizeChart\Block\SizeChartTab $block */
+$product = $block->getRegistry()->registry('current_product');
+if ($product) {
+    echo $product->getName(); // For demonstration purposes
+}
+
+$sizeChart = $block->getRelatedSizeChart();// 3 is the category ID
+if ($sizeChart) {
+    echo $sizeChart->getName(); // For demonstration purposes
+?>
+<img src="<?php echo $block->getMediaUrl($sizeChart->getData('img')) ?>">
+
+<?php
+}
+?>

@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget id="xseed_googlemap_widget" class="Xseed\GoogleMap\Block\GoogleMap" is_email_compatible="false"
+            placeholder_image="images/default_widget.png">
+        <label>Google map Widget</label>
+        <description>Adds Google map to the page.</description>
+        <parameters>
+            <parameter name="map_latitude" xsi:type="text" visible="true" required="true">
+                <label>Map Latitude</label>
+            </parameter>
+            <parameter name="map_longitude" xsi:type="text" visible="true" required="true">
+                <label>Map Longitude</label>
+            </parameter>
+            <parameter name="map_zoom" xsi:type="text" visible="true" required="true">
+                <label>Map Zoom</label>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>

@@ -1,0 +1,43 @@
+.size-chart {
+    font-family: Arial, sans-serif;
+    width: 60%;
+    margin: 50px auto;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.box {
+    flex: 1;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.box.active {
+    background-color: red;
+    color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f5f5f5;
+}
